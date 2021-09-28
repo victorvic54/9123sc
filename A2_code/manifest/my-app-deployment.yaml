@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: my-app-service
+spec:
+  selector:
+    matchLabels:
+      run: my-app-service
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        run: my-app-service
+    spec:
+      containers:
+      - name: my-app-service
+        image: sacchirro/my-app-service
+        ports:
+        - containerPort: 3000

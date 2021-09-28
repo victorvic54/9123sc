@@ -1,0 +1,9 @@
+version: '3'
+
+services:
+    my-app-service:
+        image: sacchirro/my-app-service
+        container_name: my-app-service 
+        build: ./my-app
+        ports:
+            - 3000:3000
