@@ -1,0 +1,15 @@
+version: '3'
+
+services:
+    nginx-service:
+        build: .
+        ports:
+            - 8000:80
+
+    my-app-service:
+        container_name: my-app-service 
+        build: ./my-app
+        ports:
+            - 8001:3000
+        
+            
