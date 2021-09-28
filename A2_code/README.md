@@ -6,6 +6,10 @@
 - Go to Docker Desktop and enables Kubernetes checkbox
 - Restart Docker Desktop
 
+
+Application image is publicly available at: sacchirro/my-app-service
+
+
 ### Setup services through kubernetes:
 Step 1: apply the yaml under `manifest` directory
 ```
